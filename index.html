@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TCAS69 - ระบบการคัดเลือกบุคคลเข้าศ฿กษาต่อในระดับมหาวิทยาลัย ปีการศึกษา 2569</title>
+  <link rel="icon" type="image/png" href="./images/tcas-icon.png">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <img class="sidebar-logo" src="images/tcas-icon.png" alt="TCAS 69"/>
+
+    <button class="sidebar-item active" type="button" aria-label="User">
+      <img src="images/icon-user.png" alt=""/>
+    </button>
+
+    <button class="sidebar-item" type="button" aria-label="Education">
+      <img src="images/icon-cap.png" alt=""/>
+    </button>
+
+    <button class="sidebar-item" type="button" aria-label="Book">
+      <img src="images/icon-book.png" alt=""/>
+    </button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <section class="login">
+
+      <!-- Logo -->
+      <img class="main-logo" src="images/tcas-logo.png" alt="mytcas.com TCAS 69"/>
+
+      <!-- ID Card -->
+      <div class="id-card" aria-hidden="true">
+        <img src="images/id-card.png" alt=""/>
+      </div>
+
+      <!-- Info Box -->
+      <div class="info-box">
+        <p class="info-main">
+          เข้าสู่ระบบลงทะเบียนด้วย <strong>เลขประจำตัวประชาชน 13 หลัก</strong>
+          หากไม่มี ให้ใช้ <strong>G Number</strong> หรือ <strong>Passport Number</strong>
+        </p>
+
+        <p class="warning">
+          คำแนะนำ: โปรดศึกษารายละเอียดและรูปแบบการให้คะแนนจากระบบ
+          blueprint.mytcas.com โดยเฉพาะวิชา TGAT ตอนที่ 3
+        </p>
+
+        <p class="warning">
+          ก่อนทำข้อสอบโปรดอ่านคำชี้แจงและการให้คะแนนแต่ละส่วนให้ละเอียด
+        </p>
+      </div>
+
+      <!-- Form -->
+      <div class="form">
+        <label for="pid">เลขประจำตัว *</label>
+        <input id="pid" type="text" placeholder="เลขประจำตัวประชาชน / G Number / Passport"/>
+      </div>
+
+      <!-- Buttons (ปรับให้เหมือนรูปที่ส่งมา) -->
+      <div class="actions">
+        <a class="btn btn-login link-btn" href="result.html">เข้าสู่ระบบ</a>
+
+        <button type="button" class="btn btn-thaid">
+          <!-- ถ้ามีไฟล์ images/thaid-logo.png จะโชว์รูป -->
+          <span class="thaid-badge" aria-hidden="true">
+            <img class="thaid-img" src="images/thaid-logo.png" alt=""
+                 onerror="this.style.display='none'; this.parentElement.classList.add('fallback');" />
+            <span class="thaid-fallback-text">ThaiD</span>
+          </span>
+          ดำเนินการต่อด้วย ThaiD
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
